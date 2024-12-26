@@ -1,21 +1,16 @@
 
 
-<div align="center">
-
-
-<samp>
-
-<h1>  A Fast Saturation Based Dehazing Framework with Accelerated Convolution and Attention Block </h1>
-
-<h2>Shuocheng Wang, Jiaming Liu, Yilian Zhong, Ruoxi Zhu, Jiazheng Lian, Hao Zhang, Yibo Fan*  </h2>
-
-<h2> ICASSP 2025  </h2>
-
 ---
+
+# A Fast Saturation Based Dehazing Framework with Accelerated Convolution and Attention Block
+
+**Shuocheng Wang, Jiaming Liu, Yilian Zhong, Ruoxi Zhu, Jiazheng Lian, Hao Zhang, Yibo Fan*** 
+
+***ICASSP 2025***
 
 ## Abstract
 
-Real-time image dehazing is crucial for applications such as autonomous driving, surveillance, and remote sensing, where haze can significantly reduce visibility. However, many deep learning algorithms are hindered by large model sizes, making real-time processing difficult to achieve. Several fast and lightweight dehazing networks rely on estimating K(x), but they often fail to deliver satisfying performance. In this paper, we present a novel fast dehazing framework built upon the saturation-based algorithm. We design a new convolution module called Feature Extraction Partial Convolution (FEPC), which is faster and achieves better performance than the vanilla 3x3 convolution. Additionally, we fully leverage the information redundancy between feature map channels by dividing it into two parts along the channel dimension and designing a Self-Cross Attention Block (SCAB). The reduction in channel count significantly reduces computational load and improves the framework's speed. Through extensive experiments, our method demonstrates not only a fast inference speed but also superior dehazing performance, providing a promising solution for real-time practical deployment. Our code is available at https://github.com/superwsc/FSB-Dehazing-Framework.
+Real-time image dehazing is crucial for applications such as autonomous driving, surveillance, and remote sensing, where haze can significantly reduce visibility. However, many deep learning algorithms are hindered by large model sizes, making real-time processing difficult to achieve. Several fast and lightweight dehazing networks rely on estimating K(x), but they often fail to deliver satisfying performance. In this paper, we present a novel fast dehazing framework built upon the saturation-based algorith  m. We design a new convolution module called Feature Extraction Partial Convolution (FEPC), which is faster and achieves better performance than the vanilla 3x3 convolution. Additionally, we fully leverage the information redundancy between feature map channels by dividing it into two parts along the channel dimension and designing a Self-Cross Attention Block (SCAB). The reduction in channel count significantly reduces computational load and improves the framework's speed. Through extensive experiments, our method demonstrates not only a fast inference speed but also superior dehazing performance, providing a promising solution for real-time practical deployment. Our code is available at https://github.com/superwsc/FSB-Dehazing-Framework.
 
 ## Framework Overview
 
@@ -59,7 +54,7 @@ Training arguments can be modified in 'training.yml'.
 Conduct model inference by running
 
 ```
-python inference.py --input_dir /[GT_PATH] --result_dir /[GENERATED_IMAGE_PATH] --weights /[MODEL_CHECKPOINT] --save_images
+python inference.py --input_dir /[GT_PATH] --result_dir /[GENERATED_IMAGE_PATH]  --save_images
 ```
 
 ## Evaluation (PSNR, SSIM, LPIPS)
@@ -68,7 +63,7 @@ python inference.py --input_dir /[GT_PATH] --result_dir /[GENERATED_IMAGE_PATH] 
 python evaluation.py -dir_A /[GT_PATH] -dir_B /[GENERATED_IMAGE_PATH] 
 ```
 
-# If you find our code or paper useful, please cite as
+##  If you find our code or paper useful, please cite as
 
 ```bibtex
 
