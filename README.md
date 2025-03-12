@@ -66,6 +66,16 @@ python evaluation.py -dir_A /[GT_PATH] -dir_B /[GENERATED_IMAGE_PATH]
 ##  If you find our code or paper useful, please cite as
 
 ```bibtex
+@INPROCEEDINGS{10889261,
+  author={Wang, Shuocheng and Liu, Jiaming and Zhong, Yilian and Zhu, Ruoxi and Lian, Jiazheng and Zhang, Hao and Fan, Yibo},
+  booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={A Fast Saturation Based Dehazing Framework with Accelerated Convolution and Attention Block}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Deep learning;Image quality;Convolution;Surveillance;Redundancy;Signal processing algorithms;Feature extraction;Real-time systems;Speech processing;Remote sensing;Image Dehazing;Deep Learning;Saturation-Based;Speed},
+  doi={10.1109/ICASSP49660.2025.10889261}}
 
 ```
 
