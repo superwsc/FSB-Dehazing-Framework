@@ -1,0 +1,21 @@
+###############
+GPU: [0]
+
+VERBOSE: True
+
+# Optimization arguments.
+OPTIM:
+  BATCH_SIZE: 12
+  NUM_EPOCHS: 30
+  LR_INITIAL: 1e-2
+
+TRAINING:
+
+  # TRAIN_PS: 256
+  # VAL_PS: 256
+  RESUME: False
+
+  TRAIN_DIR_KCL: '../OTS_dataset/'           # path to training data. This folder is divided into two subfolders, one named 'haze' and the other named 'gt'.
+  VAL_DIR_KCL: '../SOTS_outdoor/'              # path to validation data. This folder is divided into two subfolders, one named 'haze' and the other named 'gt'.
+  SAVE_DIR: './SE_model'    # path to save models
+
