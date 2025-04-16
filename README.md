@@ -5,6 +5,7 @@
 # A Fast Saturation Based Dehazing Framework with Accelerated Convolution and Attention Block
 
 **Shuocheng Wang, Jiaming Liu, Yilian Zhong, Ruoxi Zhu, Jiazheng Lian, Hao Zhang, Yibo Fan*** 
+**State Key Laboratory of Integrated Chips and Systems, Fudan University**
 
 ***ICASSP 2025***
 
